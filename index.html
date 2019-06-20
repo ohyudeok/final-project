@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>향신료 꽃이 피었습니다</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<meta property="og:title" content="Spice" />
+	<meta property="og:description" content="Spices that Koreans love" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://ohyudeok.github.io/final-project/" />
+	<meta property="og:image" content="thumbnail.jpg" />
+	<style>
+
+		@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff')}
+		body{font-family: 'GyeonggiBatang'}
+		.wrap{width:800px; height:23400px; margin:auto;}
+		.wrap0{width:1400px; height:23400px; margin:auto; position:relative; overflow:hidden;}
+		.wrap00{height:24000px;}
+		footer{text-align:center; font-family:'GyeonggiBatang'; margin-bottom:50px;}
+		h1{position:absolute; font-size:80pt; text-align:center; display:block; margin-top:100px; margin-left:4%;}
+		h2{font-size:50pt; text-align:center; display:block;}
+		h3{line-height:1.8; font-size:20pt; display:block; width:600px;}
+		.box0{width:1400px; height:100px; background:black; position:fixed; left:60px}
+		.box1{width:1400px; height:100px; background:black; position:fixed; left:60px; margin-top:400px; z-index:9;}
+		.sec1{height:1590px;}
+		.sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9{height:1590px;}
+		.sec2 h2{position:absolute; z-index:11; margin-top:650px; width:600px; left:29%;}
+		.sec2 h3{position:absolute; z-index:11; margin-top:800px; left:29%;}
+		.sec3 h2{position:absolute; z-index:11; margin-top:1500px; left:45%;}
+		.sec3 h3{position:absolute; z-index:11; margin-top:1650px; left:29%;}
+		.sec4 h2{position:absolute; z-index:11; margin-top:2500px; left:45%;}
+		.sec4 h3{position:absolute; z-index:11; margin-top:2650px; left:29%;}
+		.sec5 h2{position:absolute; z-index:11; margin-top:3400px; left:45%;}
+		.sec5 h3{position:absolute; z-index:11; margin-top:3550px; left:29%;}
+		.sec6 h2{position:absolute; z-index:11; margin-top:4550px; left:43%;}
+		.sec6 h3{position:absolute; z-index:11; margin-top:4700px; left:29%;}
+		.sec7 h2{position:absolute; z-index:11; margin-top:5700px; left:45%;}
+		.sec7 h3{position:absolute; z-index:11; margin-top:5850px; left:29%;}
+		.sec8 h2{position:absolute; z-index:11; margin-top:6950px; left:43%;}
+		.sec8 h3{position:absolute; z-index:11; margin-top:7100px; left:29%;}
+		.sec9 h2{position:absolute; z-index:11; margin-top:8200px; left:45%;}
+		.sec9 h3{position:absolute; z-index:11; margin-top:8350px; left:29%;}
+
+		.col1{width:33.3%; height:200px; float:left;}
+		
+
+
+		.eye{animation: ro 5s infinite}
+		@keyframes ro{
+			to{transform:rotate(360deg);}}
+		.top-down{animation: mov 5s infinite linear;}
+		@keyframes mov{
+			from{left:0px;}
+			to{left:1500px;}}
+		.topmouse{animation: mov1 1s infinite linear alternate;}
+		@keyframes mov1{
+			from{top:0px;}
+			to{top:-30px;}}
+		.bottommouse{animation: mov2 1s infinite linear alternate;}
+		@keyframes mov2{
+			from{top:0px;}
+			to{top:30px;}}
+		.leftgo{animation: mov3 1.5s infinite linear alternate;}
+		@keyframes mov3{
+			to{left:300px;}}
+		.rightgo{animation: mov4 1.5s infinite linear alternate;}
+		@keyframes mov4{
+			to{left:530px;}}
+		.shaking{animation: ro2 2s infinite linear}
+		@keyframes ro2{
+			to{transform:rotate(45deg);}}
+		.chu2{animation: ro3 1s infinite linear; animation-fill-mode:forwards;}
+		@keyframes ro3{
+			to{transform:rotate(30deg);}}
+		.chu4{animation: ro4 2s infinite linear; animation-fill-mode:forwards;}
+		@keyframes ro4{
+			50%{transform:rotate(30deg);}
+			100%{transform:rotate(60deg);}}
+		.chu3{animation: ro5 2s infinite linear; animation-fill-mode:forwards;}
+		@keyframes ro5{
+			to{transform:rotate(-30deg);}}
+		.chu1{animation: ro6 2s infinite linear; animation-fill-mode:forwards;}
+		@keyframes ro6{
+			50%{transform:rotate(-30deg);}
+			100%{transform:rotate(-60deg);}}
+
+		.rchu2{animation: ro3 1s infinite linear; animation-fill-mode:forwards;}
+		@keyframes ro3{
+			to{transform:rotate(30deg);}}
+		.rchu4{animation: ro4 2s infinite linear; animation-fill-mode:forwards;}
+		@keyframes ro4{
+			50%{transform:rotate(30deg);}
+			100%{transform:rotate(60deg);}}
+		.rchu3{animation: ro5 2s infinite linear; animation-fill-mode:forwards;}
+		@keyframes ro5{
+			to{transform:rotate(-30deg);}}
+		.rchu1{animation: ro6 2s infinite linear; animation-fill-mode:forwards;}
+		@keyframes ro6{
+			50%{transform:rotate(-30deg);}
+			100%{transform:rotate(-60deg);}}
+
+		.wind{animation: ro7 8s infinite linear; animation-fill-mode:forwards;}
+		@keyframes ro7{
+			to{transform:rotate(360deg);}}
+		.g-chu1{animation: po1 1s infinite alternate;}
+		@keyframes po1{
+			to{left:55%;}}
+		.cir-chu1{animation: po2 2s infinite alternate;}
+		@keyframes po2{
+			from{top:-500px;}}
+		.cir-chu2{animation: po3 3s infinite alternate;}
+		@keyframes po3{
+			from{top:-400px;}}
+		.kimchi{animation: po4 2s infinite alternate;}
+		@keyframes po4{
+			to{top:-750px;}}
+		.minisnacho1{animation: ro10 2s infinite alternate;}
+		@keyframes ro10{
+			to{transform:rotate(-50deg);}}
+		.minisnacho2{animation: ro11 2s infinite alternate;}
+		@keyframes ro11{
+			to{transform:rotate(50deg);}}
+		.sancho-main{animation: ro12 3s infinite alternate;}
+		@keyframes ro12{
+			to{transform:rotate(360deg);}}
+		.sancho-main2{animation: ro13 3s infinite alternate;}
+		@keyframes ro13{
+			to{transform:rotate(-360deg);}}
+		.mara{animation: sc1 4s infinite alternate;}
+		@keyframes sc1{
+			to{transform:scale(1.5,2);}}
+		.long-sancho{animation: ro14 1s infinite alternate;}
+		@keyframes ro14{
+			to{transform:rotate3D(0,1,0,360deg)}}
+		.rkarea{animation: po10 10s infinite alternate;}
+		@keyframes po10{
+			to{left:-10%}}
+		.lkarea{animation: po11 10s infinite alternate;}
+		@keyframes po11{
+			to{left:45%}}
+		.sinamon-bar{animation: po20 10s infinite linear;}
+		@keyframes po20{
+			25%{top:400px;}
+			50%{top:800px;}
+			75%{top:1100px;}
+			100%{top:1500px;}}
+		.side-bar1{animation: po21 2s infinite linear;}
+		@keyframes po21{
+			to{left:80%;}}
+		.side-bar2{animation: po22 3s infinite linear;}
+		@keyframes po22{
+			to{left:90%;}}
+		.side-bar3{animation: po23 4s infinite linear;}
+		@keyframes po23{
+			to{left:100%;}}
+		.doogoo{animation: po30 1s infinite linear}
+		@keyframes po30{
+			to{left:70%;}}
+		.doo9{animation: ro30 1s infinite linear}
+		@keyframes ro30{
+			to{transform:rotate(10deg);}}
+		.bbock{animation: po31 3s infinite alternate;}
+		@keyframes po31{
+			to{left:-50%;}}
+		.doo93{animation: sc2 1s infinite alternate;}
+		@keyframes sc2{
+			to{transform:scale(1,1.5);}}
+		.hoochu{animation: sc3 1s infinite linear;}
+		@keyframes sc3{
+			to{transform:scale(1.5,1.5);}}
+		.hoochu-spoon{animation: ro40 5s infinite alternate;}
+		@keyframes ro40{
+			to{transform:rotate(-20deg);}}
+		.hoochu-spoon2{animation: ro41 5s infinite alternate;}
+		@keyframes ro41{
+			to{transform:rotate(20deg);}}
+		.wasabi-top{animation: po50 5s infinite alternate;}
+		@keyframes po50{
+			50%{top:-100px;}
+			100%{top:-200px;}}
+		.wasabi-souce{animation: sc4 5s infinite alternate;}
+		@keyframes sc4{
+			to{transform:scale(1.5,0.8);}}
+		.wasabi-side1{animation: po51 2s infinite linear;}
+		@keyframes po51{
+			to{left:90%;}}
+		.wasabi-gwa{animation: ro50 10s infinite linear}
+		@keyframes ro50{
+			to{transform:rotate(360deg);}}
+		.wasabi-longback{animation: po52 8s infinite alternate;}
+		@keyframes po52{
+			to{left:-50%;}}
+		.banga-leap{animation: ro60 3s infinite linear;}
+		@keyframes ro60{
+			to{transform: rotate(-360deg);}}
+
+		.circle{width:1000px; margin:auto;}
+		.col2{width:25%; height:200px; float:left;}
+		.img1{width:200px; height:200px; background:black; display:block; margin:auto; border-radius:100%; }
+		.s-cir1{background:url('chu-sir2.png'); background-size:150px; background-position:0px; background-repeat:no-repeat; }
+		.s-cir2{background:url('sancho-main.png'); background-size:150px; background-position:0px; background-repeat:no-repeat;}
+		.s-cir3{background:url('ganghwang-l1.png'); background-size:150px; background-position:0px; background-repeat:no-repeat;}
+		.s-cir4{background:url('sinamon-flower12.png'); background-size:150px; background-position:0px; background-repeat:no-repeat;}
+		.s-cir5{background:url('69.png'); background-size:150px; background-position:0px; background-repeat:no-repeat;}
+		.s-cir6{background:url('black-pepper.png'); background-size:150px; background-position:0px; background-repeat:no-repeat;}
+		.s-cir7{background:url('wasabi-top.png'); background-size:150px; background-position:0px; background-repeat:no-repeat;}
+		.s-cir8{background:url('banga-leqpmini.png'); background-size:150px; background-position:0px; background-repeat:no-repeat;}
+
+		a:hover{background-image:120%}
+
+
+
+
+	</style>
+</head>
+
+<body>
+
+<div class="wrap00">
+	<div class="wrap0">
+		<audio width="320" heigth="240" controls=><source src="Nan Er Dang Zi Qiang.mp3" type="audio/mp3"></audio>
+	<h1>한국에 향신료 꽃이 피었습니다</h1>
+	<img src="cinamon-top.png" class="top-down" style="position:absolute; width:85%; z-index:10;">
+	<img src="curcuma-top.png" style="position:absolute; margin-top:500px; width:85%; z-index:10;">
+	<img src="goshu-top-r.png" class="leftgo"
+	style="position:absolute; margin-top:280px; left:calc(37% - 338px); width:50%; z-index:10;">
+	<img src="goshu-top-l.png" class="rightgo"
+	style="position:absolute; margin-top:280px; left:calc(70% - 338px);  width:50%; z-index:10;">
+	<img src="cinamonseed-top.png" class="eye"
+	style="position:absolute; margin-top:550px; left:33.3%; width:15%; z-index:10;">
+	<img src="cinamonseed-top2.png" class="eye"
+	style="position:absolute; margin-top:550px; left:52.3%; width:15%; z-index:10;">
+	<img src="ghochu-top.png" class="topmouse"
+	style="position:absolute; margin-top:750px; left:30%; width:30%; z-index:10;">
+	<img src="ghochu-top.png" class="bottommouse"
+	style="position:absolute; margin-top:750px; left:30%; width:30%; z-index:10;">
+	<img src="herb-top.png" class="herb" style="position:absolute; margin-top:750px; left:75%; width:15%; z-index:10;">
+	<img src="pepper-top.png" class="shaking"
+	style="position:absolute; margin-top:800px; left:40%; z-index:10;">
+	
+	
+	<img src="chili-powder.png" style="margin-top:1500px; position:absolute; left:13.5%; z-index:10; width:75%">
+	
+	<img src="ghochu-main.png" class="chu1"
+	style="margin-top:1600px; position:absolute; left:45%; z-index: 10;">
+	<img src="ghochu-main.png" class="chu2"
+	style="margin-top:1600px; position:absolute; left:45%; z-index: 10;">
+	<img src="ghochu-main.png" class="chu3"
+	style="margin-top:1600px; position:absolute; left:45%; z-index: 10;">
+	<img src="ghochu-main.png" class="chu4"
+	style="margin-top:1600px; position:absolute; left:45%; z-index: 10;">
+	<img src="ghochu-main.png" class="chu5"
+	style="margin-top:1600px; position:absolute; left:45%; z-index: 10;">
+	
+	<img src="ghochu-main2.png" class="rchu1"
+	style="margin-top:1600px; position:absolute; right:45%; z-index:10;">
+	<img src="ghochu-main2.png" class="rchu2"
+	style="margin-top:1600px; position:absolute; right:45%; z-index:10;">
+	<img src="ghochu-main2.png" class="rchu3"
+	style="margin-top:1600px; position:absolute; right:45%; z-index:10;">
+	<img src="ghochu-main2.png" class="rchu4"
+	style="margin-top:1600px; position:absolute; right:45%; z-index:10;">
+	<img src="ghochu-main2.png" class="rchu5"
+	style="margin-top:1600px; position:absolute; right:45%; z-index:10;">
+
+
+	<img src="chu-wind.png" class="wind"
+	style="margin-top:2200px; position:absolute; left:10%; z-index: 0; z-index:10; width:30%;">
+	<img src="kimchi.png" class="kimchi"
+	style="margin-top:2800px; position:absolute; left:55%; z-index: 10; width:50%;">
+	<img src="deanjang.png" class="eye"
+	style="margin-top:2800px; position:absolute; left:15%; z-index: 10; width:60%;">
+	<img src="dduck.png" class=""
+	style="margin-top:2700px; position:absolute; left:55%; z-index: 10; width:60%;">
+	<img src="darck.png" class=""
+	style="margin-top:3000px; position:absolute; left:-10%; z-index: 10; width:80%;">
+	<img src="chu-sir.png" class="cir-chu1"
+	style="margin-top:3200px; position:absolute; left:10%; z-index: 10; width:15%;">
+	<img src="chu-sir.png" class="cir-chu2"
+	style="margin-top:3150px; position:absolute; left:40%; z-index: 10; width:15%;">
+	<img src="chu-sir.png" class=""
+	style="margin-top:3050px; position:absolute; left:25%; z-index: 10; width:15%;">
+	<img src="green-chu.png" class=""
+	style="margin-top:2000px; position:absolute; left:75%; z-index: 10;">
+	<img src="green-chu.png" class="g-chu1"
+	style="margin-top:2200px; position:absolute; left:75%; z-index: 10;">
+	<img src="green-chu.png" class=""
+	style="margin-top:2400px; position:absolute; left:75%; z-index: 10;">
+	<img src="green-chu.png" class="g-chu1"
+	style="margin-top:2600px; position:absolute; left:75%; z-index: 10;">
+	<img src="green-chu.png" class=""
+	style="margin-top:2800px; position:absolute; left:75%; z-index: 10;">
+	<img src="green-chu.png" class="g-chu1"
+	style="margin-top:3000px; position:absolute; left:75%; z-index: 10;">
+	<img src="green-chu.png" class=""
+	style="margin-top:3200px; position:absolute; left:75%; z-index: 10;">
+	<img src="green-chu.png" class="g-chu1"
+	style="margin-top:3400px; position:absolute; left:75%; z-index: 10;">
+
+	<img src="sancho-egg.png" class=""
+	style="margin-top:4000px; position:absolute; left:12%; z-index: 10; width:75%">
+	<img src="sancho-main.png" class="sancho-main"
+	style="margin-top:3700px; position:absolute; left:30%; z-index: 10; width:50%">
+	<img src="minisancho.png" class="minisnacho1"
+	style="margin-top:4020px; position:absolute; left:1%; z-index: 10">
+	<img src="minisancho.png" class="minisnacho2"
+	style="margin-top:4020px; position:absolute; left:75%; z-index: 10">
+	<img src="ljjambbong.png" class="sancho-main"
+	style="margin-top:5300px; position:absolute; left:-15%; z-index:10; width:80%">
+	<img src="rjjambbong.png" class="sancho-main2"
+	style="margin-top:5400px; position:absolute; left:50%; z-index: 10; width:70%">
+	<img src="maratang.png" class="mara"
+	style="margin-top:5400px; position:absolute; left:30%; z-index: 10; width:50%">
+	<img src="long-sancho.png" class="long-sancho"
+	style="margin-top:4800px; position:absolute; left:43%; z-index: 10; width:60%">
+
+	<img src="ganghwang-powder.png" class=""
+	style="margin-top:6200px; position:absolute; left:5%; z-index:10; width:90%">
+	<img src="ganghwang-l2.png" class="mara"
+	style="margin-top:6500px; position:absolute; left:-20%; z-index: 11; width:60%">
+	<img src="ganghwang-l1.png" class="mara"
+	style="margin-top:6100px; position:absolute; left:-20%; z-index: 10; width:60%">
+	<img src="ganghwang-l3.png" class="mara"
+	style="margin-top:6800px; position:absolute; left:-20%; z-index: 10; width:60%">
+	<img src="ganghwang-r2.png" class="mara"
+	style="margin-top:6500px; position:absolute; left:55%; z-index: 11; width:60%">
+	<img src="ganghwang-r1.png" class="mara"
+	style="margin-top:6100px; position:absolute; left:55%; z-index: 10; width:60%">
+	<img src="ganghwang-r3.png" class="mara"
+	style="margin-top:6800px; position:absolute; left:55%; z-index: 10; width:60%">
+
+	<img src="lkarea.png" class="lkarea"
+	style="margin-top:7700px; position:absolute; left:-10%; z-index: 10; width:80%">
+	<img src="rkarea.png" class="rkarea"
+	style="margin-top:7900px; position:absolute; left:35%; z-index: 10; width:80%">
+	<img src="karea-center.png" class="sancho-main"
+	style="margin-top:7900px; position:absolute; left:25%; z-index: 10; width:50%">
+	<img src="kkarea.png" class=""
+	style="margin-top:8200px; position:absolute; left:5%; z-index: 10; width:70%">
+
+	<img src="sinamon-powder.png" class=""
+	style="margin-top:9100px; position:absolute; left:17%; z-index: 10; width:60%">
+	<img src="sinamon-bar.png" class="sinamon-bar"
+	style="margin-top:8700px; position:absolute; left:-3%; z-index: 10; width:60%">
+	<img src="sinamon-bar.png" class="sinamon-bar"
+	style="margin-top:8850px; position:absolute; left:-9%; z-index: 10; width:60%">
+	<img src="sinamon-bar.png" class="sinamon-bar"
+	style="margin-top:9000px; position:absolute; left:-15%; z-index: 10; width:60%">
+	<img src="sinamonbread-top.png" class="mara"
+	style="margin-top:9300px; position:absolute; left:30%; z-index: 10; width:30%">
+	<img src="sinamon-flower12.png" class="eye"
+	style="margin-top:9200px; position:absolute; left:60%; z-index: 10; width:30%">
+	<img src="sinamon-flower12.png" class="sinamon-bar"
+	style="margin-top:8800px; position:absolute; left:10%; z-index: 10; width:30%">
+	<img src="minisinamon-flower.png" class=""
+	style="margin-top:9050px; position:absolute; left:24%; z-index: 10; width:20%">
+
+	<img src="sinamon-bar.png" class="side-bar1"
+	style="margin-top:9500px; position:absolute; left:65%; z-index: 10">
+	<img src="sinamon-bar.png" class="side-bar2"
+	style="margin-top:9800px; position:absolute; left:55%; z-index: 10">
+	<img src="sinamon-bar.png" class="side-bar3"
+	style="margin-top:10100px; position:absolute; left:45%; z-index: 11;">
+	<img src="sinamon-bbang.png" class=""
+	style="margin-top:10300px; position:absolute; left:0%; z-index:11; width:55%">
+	<img src="sinamon-bbang.png" class="eye"
+	style="margin-top:10800px; position:absolute; left:50%; z-index: 10; width:55%">
+	<img src="sinamon-three.png" class="mara"
+	style="margin-top:10300px; position:absolute; left:10%; z-index: 10; width:75%">
+	<img src="sinamon-mini.png" class="eye"
+	style="margin-top:10550px; position:absolute; left:60%; z-index: 10; width:35%;">
+
+	<img src="6doogoo.png" class="doogoo"
+	style="margin-top:11450px; position:absolute; left:30%; z-index: 10">
+	<img src="6doo9.png" class="doo9"
+	style="margin-top:11600px; position:absolute; left:10%; z-index: 10">
+
+	<img src="6doo9.png" class="doo9"
+	style="margin-top:12300px; position:absolute; left:-40%; z-index: 10; width:80%">
+	<img src="6doo9-3.png" class="doo93"
+	style="margin-top:12800px; position:absolute; left:50%; z-index: 10">
+	<img src="6doo9-jjim.png" class=""
+	style="margin-top:13100px; position:absolute; left:-10%; z-index:12; width:90%">
+	<img src="6doo9-bbock.png" class="bbock"
+	style="margin-top:13300px; position:absolute; left:40%; z-index: 10; width:65%">
+
+	<img src="hoochu-cir.png" class="hoochu"
+	style="margin-top:14300px; position:absolute; left:20%; z-index: 10">
+	<img src="hoochu.png" class="hoochu-spoon"
+	style="margin-top:14200px; position:absolute; left:10%; z-index: 10">
+	<img src="hoochumini.png" class="hoochu-spoon"
+	style="margin-top:14800px; position:absolute; left:5%; z-index: 10">
+	<img src="hoochuright.png" class="hoochu-spoon2"
+	style="margin-top:14200px; position:absolute; left:50%; z-index: 10">
+	
+	<img src="hoochumid.png" class="hoochu-spoon"
+	style="margin-top:15400px; position:absolute; left:-5%; z-index: 13; ">
+	<img src="hoochu-3.png" class="eye"
+	style="margin-top:15600px; position:absolute; left:8%; z-index: 10">
+	<img src="hoochu-hea.png" class=""
+	style="margin-top:15800px; position:absolute; left:10.5%; z-index: 10">
+
+	<img src="wasabi-cir.png" class=""
+	style="margin-top:17400px; position:absolute; left:15%; z-index: 10">
+	<img src="wasabi-souce.png" class="wasabi-souce"
+	style="margin-top:17300px; position:absolute; left:30%; z-index: 10">
+	<img src="wasabi-top.png" class="wasabi-top"
+	style="margin-top:16800px; position:absolute; left:16%; z-index: 10">
+
+	<img src="wasabi-side.png" class="wasabi-side1"
+	style="margin-top:17400px; position:absolute; left:-25%; z-index: 10; width:65%">
+	<img src="wasabi-side.png" class="wasabi-side1"
+	style="margin-top:17700px; position:absolute; left:-35%; z-index: 10; width:65%">
+	<img src="wasabi-haesmall.png" class=""
+	style="margin-top:18800px; position:absolute; left:0%; z-index: 10; width:65%">
+	<img src="wasabi-side.png" class="wasabi-side1"
+	style="margin-top:18000px; position:absolute; left:-45%; z-index: 10; width:65%">	
+	<img src="wasabi-longback.png" class="wasabi-longback"
+	style="margin-top:18800px; position:absolute; left:0%; z-index: 10">	
+	<img src="wasabi-gwa.png" class="wasabi-gwa"
+	style="margin-top:18600px; position:absolute; left:40%; z-index: 10">
+	<img src="wasabi-long.png" class=""
+	style="margin-top:18500px; position:absolute; left:20%; z-index: 10">
+
+	<img src="banga-left.png" class=""
+	style="margin-top:20200px; position:absolute; left:0%; z-index: 10">
+	<img src="banga-flower.png" class="mara"
+	style="margin-top:20200px; position:absolute; left:38%; z-index: 10">
+	<img src="banga-leap.png" class="wasabi-gwa"
+	style="margin-top:20000px; position:absolute; left:45%; z-index: 10">
+
+	<img src="banga-leqpmini.png" class="wasabi-gwa"
+	style="margin-top:21000px; position:absolute; left:10%; z-index: 10">
+	<img src="banga-leap.png" class="banga-leap"
+	style="margin-top:20800px; position:absolute; left:45%; z-index: 10">
+	<img src="banga-a9.png" class="mara"
+	style="margin-top:21700px; position:absolute; left:-30%; z-index: 10">
+	<img src="banga-um.png" class=""
+	style="margin-top:21300px; position:absolute; left:30%; z-index: 10">
+	<img src="banga-jean.png" class="wasabi-side1"
+	style="margin-top:21500px; position:absolute; left:10%; z-index: 10">
+	
+
+	<div class="wrap">
+		<section class="sec1">
+			<img src="chili-back.jpg" style="width:800px; margin:auto; margin-top:350px;">
+		</section>
+		<section class="sec2" id="red-main">
+			<div class="sec-back1" style="width:800px;height:1444px; background:red; margin-top:150px; position:absolute;"></div>
+			<h2>고춧가루</h2>
+			<h3>한국음식의 양념으로 사용되는 대표적인 향신료로 가지과에 속하는 고추 또는 그 변종의 성숙한 열매를 건조한 후 가루로 만든 것이다. 고춧가루는 음식에서 매운맛과 붉은 색깔을 내기 위해 주로 사용되는데, 이러한 재료적 가치는 원료인 고추에서 비롯되는 것이다.</h3>
+		</section>
+		<section class="sec3">
+			<div class="sec-back2" style="width:800px; height:1444px; background:#ff3052; margin-top:1150px; position:absolute;"></div>
+			<h2 id="pink-main">산초</h2>
+			<h3>초피나무와 열매가 비슷하여 혼동하는 경우가 있으나, 서로 다른 식물이다. 초피는 과실을 가루로 내어서 향신료나 약재를 이용하는 것이 목적이고, 산초는 기름을 짜서 먹는 것이 목적이다. 산초를 이용한 대표적인 음식으로 마라탕을 들 수 있다. 마라탕의 혀가 얼얼하게 마비되는 듯한 느낌은 산초가 들어가기 때문이다.</h3>
+		</section>
+		<section class="sec4">
+			<div class="sec-back3" style="width:800px; height:1444px; background:#ff9100; margin-top:1800px; position:absolute;"></div>
+			<h2 id="orange-main">강황</h2>
+			<h3>강황은 엄청 오래 전부터 써 왔던 식물이다. 어음에는 염료로 썼는데 나중에는 전통 의술에서 약으로도 쓰게 되었고, 향신료로도 쓰게 되었다. 향신료로 쓸 때는 강황의 뿌리 줄기 부분을 쓴다. 뿌리줄기를 물에 넣어 몇 십 분간 끓이고 말린 후, 가루를 내서 쓴다. 가루의 색은 노란색을 띤 주황색에 가깝다.</h3>
+		</section>
+		<section class="sec5">
+			<div class="sec-back4" style="width:800px; height:1444px; background:#d48851; margin-top:3000px; position:absolute;"></div>
+			<h2 id="hwangto-main">계피</h2>
+			<h3>원산지는 중국 남부의 베트남 근처로 추측되며, 스리랑카, 인도, 브라질, 자메이카, 마다가스카르 등지의 열대 각지에서 폭넓게 재배된다. 세계에서 가장 오래된 향신료 중에 하나로 기원전 4000년 경부터 이집트에서 미라의 방부제로 사용되기도 했다. 계피는 매우면서 단맛이 난다는 것이 특징이다.</h3>
+		</section>
+		<section class="sec6">
+			<div class="sec-back5" style="width:800px; height:1444px; background:#6f3700; margin-top:4200px; position:absolute;"></div>
+			<h2 id="gal-main">육두구</h2>
+			<h3>인도네시아가 원산지인 향신료로 넛맥이라고도 하는데 '사향 냄새가 나는 호두'라는 뜻이다. 일반적으로 사용되는 향신료로서의 육두구 열매 속에 든 흑갈색의 씨앗 부분을 갈아서 만든 것이다. 16세기부터 유럽에 전해지면서 인기를 누리게 된 향신료로, 정향이나 후추에 비해서 향이 작그적이지 않지만 묘하게 고급스런 향미가 나며 누린내나 비린내를 제거하는데 탁월하다.</h3>
+		</section>
+		<section class="sec7">
+			<div class="sec-back6" style="width:800px; height:1444px; background:#443f3d; margin-top:5300px; position:absolute;"></div>
+			<h2 id="black-main">후추</h2>
+			<h3>지구 상에 존재하는 여러 요리 재료 중 가장 많은 피를 부른 재료이며 동시에 역사를 바꾼 향신료다. 물론 역사에 영향을 미친 것엔 다양한 향신료가 있지만 역사의 한 페이지를 장식하는 대부분의 향신료는 후추이다. 그것도 주식도 아닌 양념의 일종인데도 말이다. 후추를 먹지 못해 죽은 사람은 많지만 후추를 탐내다 죽은 사람은 셀 수도 없이 많다.</h3>
+		</section>
+		<section class="sec8">
+			<div class="sec-back7" style="width:800px; height:1444px; background:#15ff00; margin-top:6800px; position:absolute;"></div>
+			<h2 id="yellowgreen-main">와사비</h2>
+			<h3>고추냉이 또는 일본어식 표현인 와사비는 십자화과의 식물로, 일본 요리에서 뿌리를 갈아서 양념으로 쓴다. 뿌리를 간 매운 맛은 겨자와 비슷하지만 고추에 들어 있는 캡사이신과는 다른데, 혀를 자극하기보다는 증기가 코로 올라오면서 자극하기 때문이다.</h3>
+		</section>
+		<section class="sec9">
+			<div class="sec-back8" style="width:800px; height:1444px; background:#006f0d; margin-top:8000px; position:absolute;"></div>
+			<h2 id="green-main">방아</h2>
+			<h3>배초향(방아)은 꿀풀과에 속한 여러해살이풀로, 원산이며 중국, 대만, 일본에도 서식한다. 볕이 좋은 풀밭에서 자라며 풀 전체에서 특유의 향기가 진하게 난다. 경상도, 전라도의 일부 지역에서 깻잎처럼 배초향의 잎을 추어탕 들 찌개나 전골을 끓일 때 향신채로 넣기도 하고, 부치거나 튀겨 먹기도 한다.</h3>
+		</section>
+
+
+				
+			</div>
+		</div>
+
+		<div class="circle">
+			<div class="col2">
+				<a href="#red-main" target="_self"><div class="img1 s-cir1" style="z-index:12"></div></a>
+					<p></p>
+			</div>
+		</div>
+		<div class="circle">
+			<div class="col2">
+				<a href="#pink-main" target="_self"><div class="img1 s-cir2" style="z-index:12"></div></a>
+					<p></p>
+			</div>
+		</div>
+		<div class="circle">
+			<div class="col2">
+				<a href="#orange-main" target="_self"><div class="img1 s-cir3" style="z-index:12"></div></a>
+					<p></p>
+			</div>
+		</div>
+		<div class="circle">
+			<div class="col2">
+				<a href="#hwangto-main" target="_self"><div class="img1 s-cir4" style="z-index:12"></div></a>
+					<p></p>
+			</div>
+		</div>
+		<div class="circle">
+			<div class="col2">
+				<a href="#gal-main" target="_self"><div class="img1 s-cir5" style="z-index:12"></div></a>
+					<p></p>
+			</div>
+		</div>
+		<div class="circle">
+			<div class="col2">
+				<a href="#black-main" target="_self"><div class="img1 s-cir6" style="z-index:12"></div></a>
+					<p></p>
+			</div>
+		</div>
+		<div class="circle">
+			<div class="col2">
+				<a href="#yellowgreen-main" target="_self"><div class="img1 s-cir7" style="z-index:12"></div></a>
+					<p></p>
+			</div>
+		</div>
+		<div class="circle">
+			<div class="col2">
+				<a href="#green-main" target="_self"><div class="img1 s-cir8" style="z-index:12"></div></a>
+					<p></p>
+			</div>
+		</div>
+
+
+	</div>
+	</div>
+
+</body>
+<footer>
+	@20190620 designed by ohyudeok
+</footer>
+</html>
